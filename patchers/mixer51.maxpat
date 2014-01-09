@@ -31,6 +31,21 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-12",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 477.0, 237.0, 182.0, 60.0 ],
+					"text" : "takes 5 channel audio, and scales them by the master and respective levels\n"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
 					"id" : "obj-27",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -61,11 +76,11 @@
 					"fontsize" : 12.0,
 					"id" : "obj-29",
 					"maxclass" : "newobj",
-					"numinlets" : 0,
+					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 425.75, 104.0, 81.0, 20.0 ],
-					"text" : "r rightRAudio"
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 425.75, 104.0, 122.0, 20.0 ],
+					"text" : "receive~ rightRAudio"
 				}
 
 			}
@@ -75,11 +90,11 @@
 					"fontsize" : 12.0,
 					"id" : "obj-30",
 					"maxclass" : "newobj",
-					"numinlets" : 0,
+					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 459.0, 124.0, 79.0, 20.0 ],
-					"text" : "r rightRLevel"
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 459.0, 124.0, 120.0, 20.0 ],
+					"text" : "receive~ rightRLevel"
 				}
 
 			}
@@ -117,11 +132,11 @@
 					"fontsize" : 12.0,
 					"id" : "obj-25",
 					"maxclass" : "newobj",
-					"numinlets" : 0,
+					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 325.75, 104.0, 73.0, 20.0 ],
-					"text" : "r leftRAudio"
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 325.75, 104.0, 115.0, 20.0 ],
+					"text" : "receive~ leftRAudio"
 				}
 
 			}
@@ -131,11 +146,11 @@
 					"fontsize" : 12.0,
 					"id" : "obj-26",
 					"maxclass" : "newobj",
-					"numinlets" : 0,
+					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 359.0, 124.0, 71.0, 20.0 ],
-					"text" : "r leftRLevel"
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 359.0, 124.0, 113.0, 20.0 ],
+					"text" : "receive~ leftRLevel"
 				}
 
 			}
@@ -173,11 +188,11 @@
 					"fontsize" : 12.0,
 					"id" : "obj-21",
 					"maxclass" : "newobj",
-					"numinlets" : 0,
+					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 222.75, 104.0, 82.0, 20.0 ],
-					"text" : "r centerAudio"
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 222.75, 104.0, 124.0, 20.0 ],
+					"text" : "receive~ centerAudio"
 				}
 
 			}
@@ -187,11 +202,11 @@
 					"fontsize" : 12.0,
 					"id" : "obj-22",
 					"maxclass" : "newobj",
-					"numinlets" : 0,
+					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 256.0, 124.0, 80.0, 20.0 ],
-					"text" : "r centerLevel"
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 256.0, 124.0, 122.0, 20.0 ],
+					"text" : "receive~ centerLevel"
 				}
 
 			}
@@ -271,11 +286,11 @@
 					"fontsize" : 12.0,
 					"id" : "obj-3",
 					"maxclass" : "newobj",
-					"numinlets" : 0,
+					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 111.75, 104.0, 72.0, 20.0 ],
-					"text" : "r rightAudio"
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 108.0, 93.0, 114.0, 20.0 ],
+					"text" : "receive~ rightAudio"
 				}
 
 			}
@@ -285,11 +300,11 @@
 					"fontsize" : 12.0,
 					"id" : "obj-1",
 					"maxclass" : "newobj",
-					"numinlets" : 0,
+					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 2.0, 93.0, 65.0, 20.0 ],
-					"text" : "r leftAudio"
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 2.0, 93.0, 106.0, 20.0 ],
+					"text" : "receive~ leftAudio"
 				}
 
 			}
@@ -299,11 +314,11 @@
 					"fontsize" : 12.0,
 					"id" : "obj-10",
 					"maxclass" : "newobj",
-					"numinlets" : 0,
+					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 145.0, 124.0, 70.0, 20.0 ],
-					"text" : "r rightLevel"
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 145.0, 124.0, 112.0, 20.0 ],
+					"text" : "receive~ rightLevel"
 				}
 
 			}
@@ -313,11 +328,11 @@
 					"fontsize" : 12.0,
 					"id" : "obj-9",
 					"maxclass" : "newobj",
-					"numinlets" : 0,
+					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 27.0, 113.0, 63.0, 20.0 ],
-					"text" : "r leftLevel"
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 27.0, 113.0, 104.0, 20.0 ],
+					"text" : "receive~ leftLevel"
 				}
 
 			}
