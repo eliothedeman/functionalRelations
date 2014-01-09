@@ -29,13 +29,15 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"comment" : "",
-					"id" : "obj-13",
-					"maxclass" : "inlet",
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-11",
+					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 185.5, 264.0, 25.0, 25.0 ]
+					"patching_rect" : [ 201.0, 275.0, 73.0, 20.0 ],
+					"text" : "r useStereo"
 				}
 
 			}
@@ -49,7 +51,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 422.0, 80.0, 150.0, 74.0 ],
+					"patching_rect" : [ 422.0, 80.0, 150.0, 60.0 ],
 					"text" : "takes left and right audio, and scales them by the master and respective levels\n"
 				}
 
@@ -217,7 +219,7 @@
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-13", 0 ]
+					"source" : [ "obj-11", 0 ]
 				}
 
 			}
