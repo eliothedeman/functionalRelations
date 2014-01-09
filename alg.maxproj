@@ -2,7 +2,7 @@
 	"name" : "alg",
 	"version" : 1,
 	"creationdate" : -822893403,
-	"modificationdate" : -822849450,
+	"modificationdate" : -822848714,
 	"viewrect" : [ 25.0, 69.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -17,6 +17,11 @@
 			}
 ,
 			"mixer51.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"master.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
