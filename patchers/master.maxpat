@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 51.0, 188.0, 640.0, 480.0 ],
+		"rect" : [ 178.0, 107.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -31,24 +31,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"id" : "obj-22",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 551.0, 135.0, 36.0, 18.0 ],
-					"text" : "write"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-20",
-					"maxclass" : "button",
+					"id" : "obj-15",
+					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 376.0, 180.0, 20.0, 20.0 ]
+					"numoutlets" : 0,
+					"patching_rect" : [ 436.0, 212.0, 75.0, 20.0 ],
+					"text" : "s useStereo"
 				}
 
 			}
@@ -56,28 +44,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"id" : "obj-18",
-					"linecount" : 4,
-					"maxclass" : "message",
-					"numinlets" : 2,
+					"id" : "obj-14",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 454.0, 328.0, 50.0, 58.0 ],
-					"text" : "dictionary config.json"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-16",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 417.0, 114.0, 47.0, 18.0 ],
-					"text" : "set a b"
+					"patching_rect" : [ 436.0, 181.0, 60.0, 20.0 ],
+					"text" : "r uStereo"
 				}
 
 			}
@@ -87,16 +60,51 @@
 					"fontsize" : 12.0,
 					"id" : "obj-13",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 4,
-					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 402.0, 206.0, 90.0, 20.0 ],
-					"saved_object_attributes" : 					{
-						"embed" : 0,
-						"parameter_enable" : 0
-					}
-,
-					"text" : "dict config.json"
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 385.0, 181.0, 38.0, 20.0 ],
+					"text" : "r u51"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 385.0, 212.0, 53.0, 20.0 ],
+					"text" : "s use51"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "bpatcher",
+					"name" : "config.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 14.0, 68.0, 275.0, 49.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ -2.0, -11.0, 275.0, 42.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 375.0, 13.0, 121.0, 20.0 ],
+					"text" : "config.maxpat config",
+					"varname" : "config"
 				}
 
 			}
@@ -106,9 +114,9 @@
 					"fontsize" : 12.0,
 					"id" : "obj-2",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 178.0, 74.0, 184.0, 20.0 ],
+					"patching_rect" : [ 176.0, 13.0, 184.0, 20.0 ],
 					"text" : "mixerStereo.maxpat stereoMixer"
 				}
 
@@ -119,9 +127,9 @@
 					"fontsize" : 12.0,
 					"id" : "obj-1",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 16.0, 74.0, 145.0, 20.0 ],
+					"patching_rect" : [ 14.0, 13.0, 145.0, 20.0 ],
 					"text" : "mixer51.maxpat 5.1Mixer"
 				}
 
@@ -129,7 +137,7 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-18", 1 ],
+					"destination" : [ "obj-9", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-13", 0 ]
@@ -138,32 +146,19 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
+					"destination" : [ "obj-15", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-16", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-20", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-22", 0 ]
+					"source" : [ "obj-14", 0 ]
 				}
 
 			}
  ],
+		"parameters" : 		{
+			"obj-7::obj-6" : [ "live.tab[1]", "live.tab", 0 ],
+			"obj-3::obj-6" : [ "live.tab", "live.tab", 0 ]
+		}
+,
 		"dependency_cache" : [ 			{
 				"name" : "mixer51.maxpat",
 				"bootpath" : "/Users/eliot/git/max/alg/patchers",
@@ -173,6 +168,13 @@
 			}
 , 			{
 				"name" : "mixerStereo.maxpat",
+				"bootpath" : "/Users/eliot/git/max/alg/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "config.maxpat",
 				"bootpath" : "/Users/eliot/git/max/alg/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

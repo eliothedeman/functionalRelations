@@ -2,7 +2,7 @@
 	"name" : "alg",
 	"version" : 1,
 	"creationdate" : -822893403,
-	"modificationdate" : -822847747,
+	"modificationdate" : -822759913,
 	"viewrect" : [ 25.0, 69.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -10,7 +10,7 @@
 	"autolocalize" : 0,
 	"contents" : 	{
 		"patchers" : 		{
-			"mixerStereo.maxpat" : 			{
+			"master.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1,
 				"toplevel" : 1
@@ -21,7 +21,17 @@
 				"local" : 1
 			}
 ,
-			"master.maxpat" : 			{
+			"mixerStereo.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"config.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"controlToSignal.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
