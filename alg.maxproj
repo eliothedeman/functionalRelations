@@ -2,7 +2,7 @@
 	"name" : "alg",
 	"version" : 1,
 	"creationdate" : -822893403,
-	"modificationdate" : -822759913,
+	"modificationdate" : -822154664,
 	"viewrect" : [ 25.0, 69.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -32,6 +32,11 @@
 			}
 ,
 			"controlToSignal.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"collectVideo.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
