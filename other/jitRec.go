@@ -22,21 +22,24 @@ func main() {
 		// Handle the connection in a new goroutine.
 		// The loop then returns to accepting, so that
 		// multiple connections may be served concurrently.
+		go func(c net.Conn) {
+			// Echo all incoming data.
 
-		// Echo all incoming data.
-
-		done := false
-		for !done {
-			status, err := bufio.NewReader(conn).ReadString('\n')
-			if err != nil {
-				done = true
-			} else {
-				fmt.Println(status)
+			done := false
+			var arr []string
+			for !done {
+				status, err := bufio.NewReader(c).ReadString('\n')
+				if err != nil {
+					done = true
+				} else {
+					arr = append(arr, status)
+				}
+				fmt.Println(arr)
 			}
 
-		}
-
-		conn.Close()
-
+			fmt.Println(arr)
+			// Shut down the connection.
+			c.Close()
+		}(conn)
 	}
 }

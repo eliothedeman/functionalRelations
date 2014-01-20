@@ -46,27 +46,13 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-23",
-					"linecount" : 8,
+					"linecount" : 4,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 767.0, 521.0, 50.0, 112.0 ],
-					"text" : "-179?FLSX_cotqsusqppnmf`VMHD@@;\r:850, +))"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-21",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 762.0, 420.0, 43.0, 20.0 ],
-					"text" : "jit.spill"
+					"patching_rect" : [ 767.0, 521.0, 68.0, 58.0 ],
+					"text" : "]bfinptv{ÉÖâl}´Oú©´´´•üòîèåâÖÉÄ~{wvtqli"
 				}
 
 			}
@@ -81,20 +67,6 @@
 					"outlettype" : [ "jit_matrix", "jit_matrix", "jit_matrix", "jit_matrix", "" ],
 					"patching_rect" : [ 633.0, 496.0, 73.0, 20.0 ],
 					"text" : "jit.unpack"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 13.0,
-					"id" : "obj-17",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "jit_matrix", "", "" ],
-					"patching_rect" : [ 209.0, 22.0, 226.0, 21.0 ],
-					"text" : "jit.net.recv @ip 127.0.0.1 @port 7476"
 				}
 
 			}
@@ -177,7 +149,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 725.0, 303.0, 75.0, 21.0 ],
+					"patching_rect" : [ 725.0, 302.0, 75.0, 21.0 ],
 					"text" : "jit.net.send"
 				}
 
@@ -692,15 +664,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-17", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -714,15 +677,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-18", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-23", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-21", 0 ]
 				}
 
 			}
