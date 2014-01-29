@@ -23,7 +23,7 @@ function bang() {
 	for (i = 0; i < jsarguments[1]; i++) {
 		
 		arr[i] = calcFreq(freq, i);
-		post(arr);
+		
 	}
 	outlet(0, arr)
 }
