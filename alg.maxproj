@@ -1,8 +1,8 @@
 {
 	"name" : "alg",
 	"version" : 1,
-	"creationdate" : -822893403,
-	"modificationdate" : -821970418,
+	"creationdate" : -822893524,
+	"modificationdate" : 3473714600,
 	"viewrect" : [ 25.0, 69.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -31,6 +31,11 @@
 				"local" : 1
 			}
 ,
+			"subtractSynth.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"controlToSignal.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
@@ -41,7 +46,7 @@
 				"local" : 1
 			}
 ,
-			"subtractSynth.maxpat" : 			{
+			"onOff.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -53,6 +58,14 @@
 				"kind" : "json",
 				"local" : 1
 			}
+
+		}
+,
+		"externals" : 		{
+
+		}
+,
+		"other" : 		{
 
 		}
 

@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 5,
-			"architecture" : "x86"
+			"revision" : 6,
+			"architecture" : "x64"
 		}
 ,
-		"rect" : [ 0.0, 69.0, 987.0, 602.0 ],
+		"rect" : [ 8.0, 51.0, 667.0, 653.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -31,13 +31,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"id" : "obj-24",
+					"id" : "obj-8",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 490.0, 591.0, 87.0, 20.0 ],
-					"text" : "jit.str.tosymbol"
+					"numoutlets" : 3,
+					"outlettype" : [ "jit_matrix", "", "" ],
+					"patching_rect" : [ 778.0, 416.0, 210.0, 20.0 ],
+					"text" : "jit.net.recv @ip 127.0.0.1 @port 7474"
 				}
 
 			}
@@ -45,14 +45,27 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"id" : "obj-23",
-					"linecount" : 4,
-					"maxclass" : "message",
+					"id" : "obj-5",
+					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 767.0, 521.0, 68.0, 58.0 ],
-					"text" : "]bfinptv{ÉÖâl}´Oú©´´´•üòîèåâÖÉÄ~{wvtqli"
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 764.0, 585.0, 43.0, 20.0 ],
+					"text" : "jit.add"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 729.0, 551.0, 43.0, 20.0 ],
+					"text" : "jit.add"
 				}
 
 			}
@@ -191,8 +204,8 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 5,
-							"architecture" : "x86"
+							"revision" : 6,
+							"architecture" : "x64"
 						}
 ,
 						"rect" : [ 25.0, 69.0, 389.0, 300.0 ],
@@ -664,16 +677,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-15", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-18", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-24", 0 ],
+					"destination" : [ "obj-4", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-18", 2 ]
@@ -682,10 +686,37 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-23", 1 ],
+					"destination" : [ "obj-4", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-24", 0 ]
+					"source" : [ "obj-18", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-18", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
@@ -706,6 +737,15 @@
 					"hidden" : 0,
 					"midpoints" : [ 38.75, 193.0, 38.0, 193.0, 38.0, 417.0, 72.5, 417.0 ],
 					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-8", 0 ]
 				}
 
 			}
@@ -756,7 +796,15 @@
 
 			}
  ],
-		"dependency_cache" : [  ]
+		"dependency_cache" : [ 			{
+				"name" : "attrui.mxe64",
+				"type" : "mx64"
+			}
+, 			{
+				"name" : "jit.add.mxe64",
+				"type" : "mx64"
+			}
+ ]
 	}
 
 }
