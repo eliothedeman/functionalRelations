@@ -1,16 +1,24 @@
+
+// takes a int or float in, and returns
+
 var multi = 1.02;
 var freq = 1;
-outlets = 7;
-if (jsarguments.length>1) {
-	multi = jsarguments[1]
+outlets = 1;
+if (jsarguments.length>2) {
+	multi = jsarguments[2]
 	}
 
 function bang() {
-	for (i = 0; i < 7; i++) {
-		outlet(i, freq);
-		freq = freq * multi;
-		post(jsarguments[1]);
+	arr = []
+	for (i = 0; i < jsarguments[1]; i++) {
+		if (i > 0) {
+			arr[i] = arr[i-1] * multi;
+		}
+		else {
+			arr[i] = freq;
+		}
 	}
+	outlet(0, arr)
 }
 function msg_int(v) {
 	freq = v;
