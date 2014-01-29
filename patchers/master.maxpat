@@ -8,7 +8,7 @@
 			"architecture" : "x64"
 		}
 ,
-		"rect" : [ 8.0, 51.0, 667.0, 653.0 ],
+		"rect" : [ 2022.0, 102.0, 667.0, 653.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -95,8 +95,8 @@
 					"id" : "obj-5",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 7,
-					"outlettype" : [ "", "", "", "", "", "", "" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 388.0, 433.0, 108.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "splitFreqs.js",
@@ -196,7 +196,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 132.0, 291.0, 56.0, 20.0 ],
-					"sig" : 0.0
+					"sig" : 0.525538
 				}
 
 			}
@@ -211,7 +211,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 96.0, 311.0, 56.0, 20.0 ],
-					"sig" : 0.0
+					"sig" : 0.173704
 				}
 
 			}
@@ -226,7 +226,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 57.0, 331.0, 56.0, 20.0 ],
-					"sig" : 0.0
+					"sig" : 0.137088
 				}
 
 			}
@@ -238,7 +238,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 132.0, 173.0, 39.0, 95.0 ],
+					"patching_rect" : [ 132.0, 168.0, 39.0, 95.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 87.0, 203.0, 39.0, 95.0 ],
 					"saved_attribute_attributes" : 					{
@@ -767,20 +767,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"id" : "obj-3",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 375.0, 13.0, 121.0, 20.0 ],
-					"text" : "config.maxpat config",
-					"varname" : "config"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -914,15 +900,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-16", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-5", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -932,11 +909,10 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-18" : [ "master", "Master", 0 ],
-			"obj-11" : [ "left-audio", "Left", 0 ],
-			"obj-3::obj-6" : [ "live.tab", "live.tab", 0 ],
 			"obj-7::obj-6" : [ "live.tab[1]", "live.tab", 0 ],
-			"obj-17" : [ "right-audo", "Right", 0 ]
+			"obj-11" : [ "left-audio", "Left", 0 ],
+			"obj-17" : [ "right-audo", "Right", 0 ],
+			"obj-18" : [ "master", "Master", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -965,6 +941,34 @@
 				"bootpath" : "/Users/eliot/Documents/GitHub/alg/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "scaleFreqs.js",
+				"bootpath" : "/Users/eliot/Documents/GitHub/alg/code",
+				"patcherrelativepath" : "../code",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "harmonicSplit.js",
+				"bootpath" : "/Users/eliot/Documents/GitHub/alg/code",
+				"patcherrelativepath" : "../code",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "baseSynth.maxpat",
+				"bootpath" : "/Users/eliot/Documents/GitHub/alg/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "splitFreqs.js",
+				"bootpath" : "/Users/eliot/Documents/GitHub/alg/code",
+				"patcherrelativepath" : "../code",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
  ]
