@@ -1,9 +1,9 @@
 {
 	"name" : "alg",
 	"version" : 1,
-	"creationdate" : -822893766,
-	"modificationdate" : 3473858348,
-	"viewrect" : [ 2234.0, 825.0, 300.0, 500.0 ],
+	"creationdate" : -822893887,
+	"modificationdate" : 3474069230,
+	"viewrect" : [ 986.0, 144.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -22,6 +22,11 @@
 			}
 ,
 			"mixerStereo.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"config.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
