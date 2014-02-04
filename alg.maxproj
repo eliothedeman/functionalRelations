@@ -1,8 +1,8 @@
 {
 	"name" : "alg",
 	"version" : 1,
-	"creationdate" : -822893887,
-	"modificationdate" : 3474069230,
+	"creationdate" : -822894129,
+	"modificationdate" : 3474335341,
 	"viewrect" : [ 986.0, 144.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -12,8 +12,7 @@
 		"patchers" : 		{
 			"master.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1,
-				"toplevel" : 1
+				"local" : 1
 			}
 ,
 			"mixer51.maxpat" : 			{
@@ -67,6 +66,9 @@
 		}
 ,
 		"other" : 		{
+			"basic.lua" : 			{
+				"kind" : "file"
+			}
 
 		}
 
