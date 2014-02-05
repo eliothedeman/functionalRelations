@@ -8,7 +8,7 @@
 			"architecture" : "x64"
 		}
 ,
-		"rect" : [ 0.0, 43.0, 872.0, 669.0 ],
+		"rect" : [ 8.0, 51.0, 667.0, 653.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -31,6 +31,21 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"id" : "obj-6",
+					"linecount" : 5,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 300.0, 521.0, 50.0, 73.0 ],
+					"text" : "mouseidleout 368 83 0 0 0 0 0 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -50,7 +65,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 395.0, 433.0, 246.0, 20.0 ],
+					"patching_rect" : [ 395.0, 496.0, 246.0, 20.0 ],
 					"text" : "jit.gl.lua mesh @file basic.lua @autowatch 1"
 				}
 
@@ -72,12 +87,14 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-8",
+					"idlemouse" : 1,
 					"maxclass" : "jit.pwindow",
 					"name" : "mesh",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 307.0, 57.5, 421.523376, 332.5 ]
+					"patching_rect" : [ 188.238312, 89.0, 345.0, 255.775757 ],
+					"usedstrect" : 1
 				}
 
 			}
@@ -147,7 +164,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 648.5, 12.0, 150.0, 20.0 ]
+					"patching_rect" : [ 501.5, 41.0, 150.0, 20.0 ]
 				}
 
 			}
@@ -185,6 +202,24 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-33", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-8", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-8", 1 ]
 				}
 
 			}
