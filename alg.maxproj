@@ -1,8 +1,8 @@
 {
 	"name" : "alg",
 	"version" : 1,
-	"creationdate" : -822894129,
-	"modificationdate" : 3474335341,
+	"creationdate" : -822894371,
+	"modificationdate" : 3475012010,
 	"viewrect" : [ 986.0, 144.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -51,6 +51,16 @@
 			}
 ,
 			"onOff.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"organ.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"mainVideo.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}

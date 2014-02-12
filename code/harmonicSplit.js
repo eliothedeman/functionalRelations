@@ -1,13 +1,11 @@
 
 // takes a int or float in, and returns a list of frequencies in the harmonic series of the original frequency
 
-var multi = 1.02;
-var freq = 1;
-outlets = 1;
-if (jsarguments.length>2) {
-	multi = jsarguments[2]
-	}
 
+var freq = 1;
+outlets = 2;
+
+// recursivly calculate a given frequency given its place in the harmonic series
 function calcFreq(cur, n) {
 	if (n == 0) {
 		return cur;
@@ -17,15 +15,27 @@ function calcFreq(cur, n) {
 	}
 
 }
+function calcAmp(freq, n) {
+	return 1/(n*2)
+}
 
 function bang() {
-	arr = []
+	freqArr = []
+	ampArr = []
 	for (i = 0; i < jsarguments[1]; i++) {
 		
-		arr[i] = calcFreq(freq, i);
+		freqArr[i] = calcFreq(freq, i);
+		if (i == 0 ) {
+			ampArr[i] = 1;
+		} 
+		else {
+			ampArr[i] = calcAmp(freqArr[i], i);
+		}
+
 		
 	}
-	outlet(0, arr)
+	outlet(0, freqArr)
+	outlet(1, ampArr)
 }
 function msg_int(v) {
 	freq = v;
