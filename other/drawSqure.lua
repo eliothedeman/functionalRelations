@@ -35,7 +35,7 @@ function erase()
 
 end
 function output(msg)
-	outlet(0, "hello")
+	outlet(0, msg)
 end
 function draw()
 	gl.Enable(GL.BLEND)
