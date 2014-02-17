@@ -5,14 +5,34 @@ local S = 0.8
 
 
 line = {}
+resX = 1
+scaleXY = 0
+resY = 1
+function setScale(_,_,x,y)
+	resX = x
+	resY = y
+	scaleXY = x/y
+	print(scaleXY)
+end
+function scale(min, max,s,num)
+
+	local x = num * s * 2
+	h =  (x / max) - s
+	print("max", max)
+	print(h)
+	return h
+
+
+
+end
 function setSeg(ix,iy,ms)
 	if ms == 1 and not drawing then
 		drawing = true
 		line = {}
 	elseif ms == 1 then
 		local seg = {ix,iy}
-		seg[0] = ix
-		seg[1] = -iy
+		seg[0] = scale(0, resX,scaleXY,ix)
+		seg[1] = -scale(0, resY,1/scaleXY,iy)
 		line[#line + 1] = seg
 	else
 		drawing = false
@@ -22,20 +42,7 @@ function setSeg(ix,iy,ms)
 
 end
 function draw()
-	-- gl.Enable(GL.BLEND)
-	-- gl.BlendFunc(GL.SRC_ALPHA, GL.ONE)
-	-- gl.Disable(GL.DEPTH_TEST)
-	-- gl.Color(1, 0, 0.5, 0.5)
-	-- if #line > 1 then
-	-- 	gl.Begin(GL.LINES)
-	-- 	for i = 1, #line do
-	-- 		print(i)
-	-- 		gl.Vertex(line[i][0],line[i][1],0)
-	-- 		print("here")
-			
-	-- 	end
-	-- 	gl.End()
-	-- end	
+
 	gl.Enable(GL.BLEND)
 	gl.BlendFunc(GL.SRC_ALPHA, GL.ONE)
 	gl.Disable(GL.DEPTH_TEST)
