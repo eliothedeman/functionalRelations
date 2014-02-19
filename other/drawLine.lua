@@ -19,8 +19,6 @@ function scale(dif, max,s,num)
 
 	local x = (num * s * 2) 
 	h =  (x / max) - s
-	print("max", max)
-	print(h)
 	return h
 
 
@@ -46,9 +44,12 @@ function outList()
 	local l = ""
 	for i=1,#line do
 		for x=0, 1 do
-			l = l.. tostring(line[i][x])
+			
 			if x ==0 then
+				l = l.. tostring(line[i][x]+1)
 				l = l .. ":"
+			else
+				l = l .. tostring(line[i][x]+scaleY)
 			end
 		end
 		l = l .. ":"

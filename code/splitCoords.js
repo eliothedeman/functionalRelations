@@ -3,7 +3,12 @@ function boom(msg) {
 	h = []
 	for (var i = 0; i < c.length; i++) {
 		if (c[i] != "") {
-			h[i] = parseFloat(c[i])
+			h[i] = parseFloat(c[i]);
+			if (i%2 == 0) 
+				{
+					h[i] = h[i]+1;
+					post("here");
+				}
 		}
 		
 
