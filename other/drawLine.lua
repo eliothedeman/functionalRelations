@@ -6,17 +6,18 @@ local S = 0.8
 
 line = {}
 resX = 1
-scaleXY = 0
+scaleX = 0
+scaleY = 0
 resY = 1
 function setScale(_,_,x,y)
 	resX = x
 	resY = y
-	scaleXY = x/y
-	print(scaleXY)
+	scaleX = x/y
+	scaleY = y/x
 end
-function scale(min, max,s,num)
+function scale(dif, max,s,num)
 
-	local x = num * s * 2
+	local x = (num * s * 2) 
 	h =  (x / max) - s
 	print("max", max)
 	print(h)
@@ -31,8 +32,8 @@ function setSeg(ix,iy,ms)
 		line = {}
 	elseif ms == 1 then
 		local seg = {ix,iy}
-		seg[0] = scale(0, resX,scaleXY,ix)
-		seg[1] = -scale(0, resY,1/scaleXY,iy)
+		seg[0] = scale(resX-resY, resX,scaleX,ix)
+		seg[1] = -scale(resY-resX, resY,scaleY,iy)
 		line[#line + 1] = seg
 	else
 		drawing = false
@@ -40,6 +41,21 @@ function setSeg(ix,iy,ms)
 
 	
 
+end
+function outList()
+	local l = ""
+	for i=1,#line do
+		for x=0, 1 do
+			l = l.. tostring(line[i][x])
+			if x ==0 then
+				l = l .. ":"
+			end
+		end
+		l = l .. ":"
+
+
+	end
+	outlet(1,l)
 end
 function draw()
 
