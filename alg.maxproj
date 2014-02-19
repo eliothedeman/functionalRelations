@@ -1,8 +1,8 @@
 {
 	"name" : "alg",
 	"version" : 1,
-	"creationdate" : -822894492,
-	"modificationdate" : 3475102894,
+	"creationdate" : -822894613,
+	"modificationdate" : 3475674174,
 	"viewrect" : [ 986.0, 144.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -68,6 +68,18 @@
 			"collectFunction.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
+			}
+,
+			"sampler.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+
+		}
+,
+		"media" : 		{
+			"0004 3-Audio.wav" : 			{
+				"kind" : "audiofile"
 			}
 
 		}
