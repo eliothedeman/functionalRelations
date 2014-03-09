@@ -829,7 +829,7 @@
 		"dependency_cache" : [ 			{
 				"name" : "splitCoords.js",
 				"bootpath" : "/Users/eliot/Documents/GitHub/alg/code",
-				"patcherrelativepath" : "../code",
+				"patcherrelativepath" : "./code/./code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
