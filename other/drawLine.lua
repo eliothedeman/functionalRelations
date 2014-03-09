@@ -1,27 +1,16 @@
-local gl = require("opengl")
+local gl = require("opengl") 
 local GL = gl
 
 local S = 0.8
 
 
 line = {}
-resX = 1
-scaleX = 0
-scaleY = 0
-resY = 1
-function setScale(_,_,x,y)
-	resX = x
-	resY = y
-	scaleX = x/y
-	scaleY = y/x
-end
-function scale(dif, max,s,num)
-
-	local x = (num * s * 2) 
-	h =  (x / max) - s
+function reverseScale(max, toScale, scale)
+	local x = toScale /scale
+	x = x / 2
+	h = (x * max) - scale
 	return h
-
-
+        
 
 end
 function setSeg(ix,iy,ms)
@@ -30,8 +19,8 @@ function setSeg(ix,iy,ms)
 		line = {}
 	elseif ms == 1 then
 		local seg = {ix,iy}
-		seg[0] = scale(resX-resY, resX,scaleX,ix)
-		seg[1] = -scale(resY-resX, resY,scaleY,iy)
+		seg[0] = ix
+		seg[1] = -iy
 		line[#line + 1] = seg
 	else
 		drawing = false
@@ -46,17 +35,17 @@ function outList()
 		for x=0, 1 do
 			
 			if x ==0 then
-				l = l.. tostring(line[i][x]+1)
+				l = l.. tostring(line[i][x])
 				l = l .. ":"
-			else
-				l = l .. tostring(line[i][x]+scaleY)
+			else 
+				l = l .. tostring(line[i][x])  
 			end
 		end
 		l = l .. ":"
-
+		
 
 	end
-	outlet(1,l)
+	outlet(0,l)
 end
 function draw()
 

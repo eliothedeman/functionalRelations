@@ -7,7 +7,6 @@ function boom(msg) {
 			if (i%2 == 0) 
 				{
 					h[i] = h[i]+1;
-					post("here");
 				}
 		}
 		
