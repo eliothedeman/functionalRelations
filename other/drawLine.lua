@@ -36,12 +36,12 @@ function outList()
 			
 			if x ==0 then
 				l = l.. tostring(line[i][x])
-				l = l .. ":"
+				l = l .. " "
 			else 
 				l = l .. tostring(line[i][x])  
 			end
 		end
-		l = l .. ":"
+		l = l .. " "
 		
 
 	end

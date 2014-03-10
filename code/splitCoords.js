@@ -1,5 +1,5 @@
 function boom(msg) {
-	c = msg.split(":")
+	c = msg.split(" ")
 	h = []
 	for (var i = 0; i < c.length; i++) {
 		if (c[i] != "") {
