@@ -8,7 +8,7 @@
 			"architecture" : "x64"
 		}
 ,
-		"rect" : [ 2022.0, 102.0, 667.0, 653.0 ],
+		"rect" : [ 0.0, 43.0, 1600.0, 795.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -28,6 +28,18 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "bpatcher",
+					"name" : "collectFunction.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 722.0, 68.0, 521.0, 519.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -196,7 +208,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 132.0, 291.0, 56.0, 20.0 ],
-					"sig" : 0.525538
+					"sig" : 0.0
 				}
 
 			}
@@ -211,7 +223,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 96.0, 311.0, 56.0, 20.0 ],
-					"sig" : 0.173704
+					"sig" : 0.0
 				}
 
 			}
@@ -226,7 +238,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 57.0, 331.0, 56.0, 20.0 ],
-					"sig" : 0.137088
+					"sig" : 0.0
 				}
 
 			}
@@ -909,9 +921,9 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-7::obj-6" : [ "live.tab[1]", "live.tab", 0 ],
 			"obj-11" : [ "left-audio", "Left", 0 ],
 			"obj-17" : [ "right-audo", "Right", 0 ],
+			"obj-7::obj-6" : [ "live.tab[1]", "live.tab", 0 ],
 			"obj-18" : [ "master", "Master", 0 ]
 		}
 ,
@@ -951,7 +963,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "harmonicSplit.js",
+				"name" : "natHarmonic.js",
 				"bootpath" : "/Users/eliot/Documents/GitHub/alg/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
@@ -970,6 +982,31 @@
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "collectFunction.maxpat",
+				"bootpath" : "/Users/eliot/Documents/GitHub/alg/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "splitCoords.js",
+				"bootpath" : "/Users/eliot/Documents/GitHub/alg/code",
+				"patcherrelativepath" : "../code",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "normList.js",
+				"bootpath" : "/Users/eliot/Documents/GitHub/alg/code",
+				"patcherrelativepath" : "../code",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "attrui.mxe64",
+				"type" : "mx64"
 			}
  ]
 	}

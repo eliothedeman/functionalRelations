@@ -1,3 +1,4 @@
+outlets = 2;
 function parseList(xyList) {
 	xyList = xyList.replace('"', '');
 
@@ -62,6 +63,7 @@ function norm(xyList,param) {
 	};
 	outlet(0,1.0)
 	outlet(0,0.0)
+	outlet(1,"bang")
 	
 }
 
