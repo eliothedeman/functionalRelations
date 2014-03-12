@@ -5,8 +5,7 @@ function parseList(xyList) {
 	
 
 	newList = [];
-	newList[0] = [0.0,0.0]
-	var x = 1;
+	var x = 0;
 	for (var i = 0; i < splitList.length; i+=2) {
 		if (splitList[i] !="") {
 			newArr = [parseFloat(splitList[i]).toPrecision(6), parseFloat(splitList[i+1]).toPrecision(6)];
@@ -40,16 +39,29 @@ function findMax(list,offset) {
 	return max;
 	};	
 }
+function scale(val, scale, min, max,top, bot) {
+	return ((top-bot)*(val-min)/scale) + bot
 
+}
 // normalizes a list based on 
 function norm(xyList,param) {
 	h = parseList(xyList);
-	y = []
-	var z = 0
+	minX = findMin(h,0);
+	minY = findMin(h,1);
+	maxX = findMax(h,0);
+	maxY = findMax(h,1);
+	scaleX = maxX - minX;
+	scaleY = maxY - minY;
+	outlet(0,0.0);
+	outlet(0,0.0);
 	for (var i = 0; i < h.length; i++) {
-		outlet(0,parseFloat(h[i][0]));
-		outlet(0,parseFloat(h[i][1]));
+		thisX = parseFloat(h[i][0]).toPrecision(6);
+		thisY = parseFloat(h[i][1]).toPrecision(6);
+		outlet(0,scale(thisX,scaleX,minX,maxX,0,1));
+		outlet(0,scale(thisY,scaleY,minY,maxY,-1,1));
 	};
+	outlet(0,1.0)
+	outlet(0,0.0)
 	
 }
 
