@@ -1,4 +1,6 @@
 outlets = 2;
+var dict = new Dict("masterState");
+
 function parseList(xyList) {
 	xyList = xyList.replace('"', '');
 
@@ -53,17 +55,14 @@ function norm(xyList,param) {
 	maxY = findMax(h,1);
 	scaleX = maxX - minX;
 	scaleY = maxY - minY;
-	outlet(0,0.0);
-	outlet(0,0.0);
+	dict.replace("normalizedFunction", new Dict("normalizedFunction"));
 	for (var i = 0; i < h.length; i++) {
-		thisX = parseFloat(h[i][0]).toPrecision(6);
-		thisY = parseFloat(h[i][1]).toPrecision(6);
-		outlet(0,scale(thisX,scaleX,minX,maxX,0,1));
-		outlet(0,scale(thisY,scaleY,minY,maxY,-1,1));
-	};
-	outlet(0,1.0)
-	outlet(0,0.0)
-	outlet(1,"bang")
+		dict.set("normalizedFunction::" + i, new Dict(""+i));
+		dict.set("normalizedFunction::" + i + "::x", parseFloat(h[i][0]).toPrecision(6)) 
+		dict.set("normalizedFunction::" + i + "::y", parseFloat(h[i][1]).toPrecision(6)) 
+		
+		
+	}
 	
 }
 
