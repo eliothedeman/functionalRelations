@@ -11,7 +11,7 @@ function parseList(xyList) {
 	var x = 0;
 	for (var i = 0; i < splitList.length; i+=2) {
 		if (splitList[i] !="") {
-			newArr = [parseFloat(splitList[i]).toPrecision(6), parseFloat(splitList[i+1]).toPrecision(6)];
+			newArr = [parseFloat(splitList[i]), parseFloat(splitList[i+1])];
 			newList[x] = newArr;	
 		}
 		x++;
@@ -55,11 +55,14 @@ function norm(xyList,param) {
 	maxY = findMax(h,1);
 	scaleX = maxX - minX;
 	scaleY = maxY - minY;
+
 	dict.replace("normalizedFunction", new Dict("normalizedFunction"));
 	for (var i = 0; i < h.length; i++) {
 		dict.set("normalizedFunction::" + i, new Dict(""+i));
-		dict.set("normalizedFunction::" + i + "::x", parseFloat(h[i][0]).toPrecision(6)) 
-		dict.set("normalizedFunction::" + i + "::y", parseFloat(h[i][1]).toPrecision(6)) 
+		var x = scale(h[i][0],scaleX,minX,maxX,1,0);
+		var y = scale(h[i][1],scaleY,minY,maxY,1,-1);
+		dict.set("normalizedFunction::" + i + "::x", x);
+		dict.set("normalizedFunction::" + i + "::y", y); 
 		
 		
 	}

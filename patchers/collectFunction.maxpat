@@ -8,7 +8,7 @@
 			"architecture" : "x64"
 		}
 ,
-		"rect" : [ -8.0, 51.0, 1600.0, 795.0 ],
+		"rect" : [ 8.0, 51.0, 1600.0, 795.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -52,25 +52,6 @@
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 646.0, 349.0, 119.0, 20.0 ],
 					"text" : "filewatch normLIst.js"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-5",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 4,
-					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 691.0, 467.0, 59.5, 20.0 ],
-					"saved_object_attributes" : 					{
-						"embed" : 0,
-						"parameter_enable" : 0
-					}
-,
-					"text" : "dict"
 				}
 
 			}
@@ -179,7 +160,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 584.0, 401.0, 85.0, 20.0 ],
+					"patching_rect" : [ 522.666687, 380.0, 85.0, 20.0 ],
 					"text" : "prepend norm"
 				}
 
@@ -191,8 +172,8 @@
 					"id" : "obj-8",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 573.0, 448.0, 81.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "normList.js",
