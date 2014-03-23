@@ -66,6 +66,7 @@ function norm(xyList,param) {
 		
 		
 	}
+	outlet(0,"bang");
 	
 }
 

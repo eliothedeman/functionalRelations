@@ -21,5 +21,6 @@ function boom(msg) {
 
 		
 	}
+	outlet(0,"bang");
 	
 }
