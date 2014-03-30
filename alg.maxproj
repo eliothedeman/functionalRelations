@@ -1,8 +1,8 @@
 {
 	"name" : "alg",
 	"version" : 1,
-	"creationdate" : -822895097,
-	"modificationdate" : 3478609655,
+	"creationdate" : -822895218,
+	"modificationdate" : 3478973302,
 	"viewrect" : [ 988.0, 145.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -31,6 +31,16 @@
 			}
 ,
 			"collectFunction.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"cron.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"sampler.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -65,17 +75,7 @@
 				"local" : 1
 			}
 ,
-			"sampler.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
 			"wavetable.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"cron.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -92,6 +92,11 @@
 		"code" : 		{
 			"dumpFunc.js" : 			{
 				"kind" : "javascript"
+			}
+,
+			"genNotes.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
 			}
 
 		}
