@@ -1,9 +1,9 @@
 {
 	"name" : "alg",
 	"version" : 1,
-	"creationdate" : -822895218,
-	"modificationdate" : 3478973302,
-	"viewrect" : [ 988.0, 145.0, 300.0, 500.0 ],
+	"creationdate" : -822895339,
+	"modificationdate" : 3478978652,
+	"viewrect" : [ 2246.0, 295.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -76,6 +76,11 @@
 			}
 ,
 			"wavetable.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"simple.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
