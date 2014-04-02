@@ -1,8 +1,8 @@
 {
 	"name" : "alg",
 	"version" : 1,
-	"creationdate" : -822895339,
-	"modificationdate" : 3478978652,
+	"creationdate" : -822895460,
+	"modificationdate" : 3479236034,
 	"viewrect" : [ 2246.0, 295.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -36,6 +36,11 @@
 			}
 ,
 			"cron.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"simple.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -79,11 +84,6 @@
 				"kind" : "patcher",
 				"local" : 1
 			}
-,
-			"simple.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
 
 		}
 ,
@@ -103,6 +103,10 @@
 				"kind" : "javascript",
 				"local" : 1
 			}
+
+		}
+,
+		"externals" : 		{
 
 		}
 ,
