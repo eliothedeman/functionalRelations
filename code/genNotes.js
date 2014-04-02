@@ -4,7 +4,7 @@ var masterNotes = new Dict("masterNotes");
 var pieceLength = masterTime.get("piece::length")
 function newNote(prob, seed,index){
 	var payload = new Dict(""+index);
-	payload.set("length", Math.pow(1-((prob+1)/2),2)*(pieceLength/1000));
+	payload.set("length", Math.pow(1-((prob+1)/2),2)*(pieceLength/100));
 	payload.set("prob", (prob+1)/2)
 	payload.set("amp", 1-(((prob+1)/2)*seed))
 	payload.set("pitch", Math.random() *(96*seed));
@@ -17,7 +17,6 @@ function newNote(prob, seed,index){
 };
 	
 function genNotes() {
-	post(pieceLength)
 	masterNotes.clear();
 	var normalizedX = []
 	var normalizedY = []

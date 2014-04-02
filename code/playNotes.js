@@ -1,7 +1,8 @@
-var masterNotes = to_hash(new Dict("masterNotes"));
+
 outlets = 3
 
 function playNotes() {
+	var masterNotes = to_hash(new Dict("masterNotes"));
 	var elements;
 	var elementsKeys;
 	var keys = Object.keys(masterNotes);
@@ -13,6 +14,7 @@ function playNotes() {
 				outlet(0, parseInt(keys[i]));
 				outlet(1, elementsKeys[x]);
 				outlet(2, elements[elementsKeys[x]]);
+
 
 			}
 		}
