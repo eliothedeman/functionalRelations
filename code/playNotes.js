@@ -1,9 +1,11 @@
 outlets = 3;
 
-function playNotes() {
+function playNotes(num) {
 	var masterNotes = to_hash(new Dict("masterNotes"));
 	var keys = Object.keys(masterNotes);
-	for (var i = keys.length - 1; i >= 0; i--) {
+	var done = 0;
+	while (done < num) {
+		i = done % keys.length;
 		var elements = masterNotes[keys[i]];
 		try {
 			var elementsKeys = Object.keys(elements);
@@ -17,11 +19,13 @@ function playNotes() {
 				outlet(0, elementsKeys[x]);
 			};
 			elements["prob"] -= 0.01
+			done +=1;
 		}
-		if (elements["prob"] < 0.02) {
+		if (elements["prob"] < 0.02 || elements["prob"] == 1) {
 			delete masterNotes[keys[i]];
 		}
-	};
+		
+	}
 	var d = new Dict("masterNotes");
 	d.clone(to_dict(masterNotes).name);
 	if (keys.length < 2) {
