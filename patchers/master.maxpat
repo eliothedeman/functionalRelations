@@ -8,7 +8,7 @@
 			"architecture" : "x64"
 		}
 ,
-		"rect" : [ 8.0, 51.0, 1920.0, 981.0 ],
+		"rect" : [ 0.0, 43.0, 1920.0, 981.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -841,7 +841,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1057.0, 1309.0, 50.0, 18.0 ],
-					"text" : "4"
+					"text" : "1"
 				}
 
 			}
@@ -959,13 +959,12 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-123",
-					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 142.0, 1176.0, 50.0, 46.0 ],
-					"text" : "1 1 1 1 1 0 0 0 1 0"
+					"patching_rect" : [ 142.0, 1176.0, 50.0, 18.0 ],
+					"text" : "1"
 				}
 
 			}
@@ -1046,7 +1045,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 716.0, 1179.0, 50.0, 18.0 ],
-					"text" : "1 1 0 1"
+					"text" : "1 1 0 0"
 				}
 
 			}
@@ -1494,8 +1493,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "", "" ],
-					"patching_rect" : [ 70.531136, 1092.5625, 168.0, 20.0 ],
-					"text" : "poly~ simple 10 1 @parallel 1"
+					"patching_rect" : [ 70.531136, 1092.5625, 162.0, 20.0 ],
+					"text" : "poly~ simple 1 1 @parallel 1"
 				}
 
 			}
@@ -1602,703 +1601,703 @@
 				"box" : 				{
 					"data" : 					{
 						"99" : 						{
-							"release" : 845.366161,
-							"sustain" : 0.796003,
-							"decay" : 88.733384,
-							"attack" : 0.137932
+							"release" : 849.792619,
+							"sustain" : 0.793581,
+							"decay" : 105.400635,
+							"attack" : 0.280792
 						}
 ,
 						"98" : 						{
-							"release" : 821.556109,
-							"sustain" : 0.610757,
-							"decay" : 126.754999,
-							"attack" : 0.232965
+							"release" : 765.283331,
+							"sustain" : 0.662094,
+							"decay" : 116.290987,
+							"attack" : 0.151898
 						}
 ,
 						"97" : 						{
-							"release" : 837.78993,
-							"sustain" : 0.60977,
-							"decay" : 97.209677,
-							"attack" : 0.391781
+							"release" : 848.984567,
+							"sustain" : 0.793898,
+							"decay" : 118.728741,
+							"attack" : 0.036037
 						}
 ,
 						"96" : 						{
-							"release" : 750.45611,
-							"sustain" : 0.736143,
-							"decay" : 111.22985,
-							"attack" : 0.112866
+							"release" : 840.251586,
+							"sustain" : 0.795993,
+							"decay" : 102.554167,
+							"attack" : 0.024314
 						}
 ,
 						"95" : 						{
-							"release" : 844.120927,
-							"sustain" : 0.729765,
-							"decay" : 92.785842,
-							"attack" : 0.030393
+							"release" : 769.808633,
+							"sustain" : 0.678601,
+							"decay" : 86.159264,
+							"attack" : 0.135743
 						}
 ,
 						"94" : 						{
-							"release" : 834.896934,
-							"sustain" : 0.630895,
-							"decay" : 96.719729,
-							"attack" : 0.088566
+							"release" : 805.67656,
+							"sustain" : 0.625688,
+							"decay" : 97.426595,
+							"attack" : 0.093812
 						}
 ,
 						"93" : 						{
-							"release" : 823.468234,
-							"sustain" : 0.607681,
-							"decay" : 108.479405,
-							"attack" : 0.210459
+							"release" : 774.847461,
+							"sustain" : 0.666099,
+							"decay" : 99.480572,
+							"attack" : 0.354948
 						}
 ,
 						"92" : 						{
-							"release" : 798.330982,
-							"sustain" : 0.729686,
-							"decay" : 120.583024,
-							"attack" : 0.243198
+							"release" : 778.134888,
+							"sustain" : 0.776511,
+							"decay" : 98.505507,
+							"attack" : 0.04681
 						}
 ,
 						"91" : 						{
-							"release" : 761.780281,
-							"sustain" : 0.795615,
-							"decay" : 116.049138,
-							"attack" : 0.377291
+							"release" : 841.507197,
+							"sustain" : 0.628841,
+							"decay" : 101.792976,
+							"attack" : 0.03093
 						}
 ,
 						"90" : 						{
-							"release" : 845.022205,
-							"sustain" : 0.703321,
-							"decay" : 110.170377,
-							"attack" : 0.041502
+							"release" : 769.965366,
+							"sustain" : 0.719941,
+							"decay" : 98.526734,
+							"attack" : 0.148385
 						}
 ,
 						"89" : 						{
-							"release" : 794.512449,
-							"sustain" : 0.723802,
-							"decay" : 109.088646,
-							"attack" : 0.065596
+							"release" : 789.655633,
+							"sustain" : 0.79037,
+							"decay" : 113.596629,
+							"attack" : 0.038824
 						}
 ,
 						"88" : 						{
-							"release" : 849.220658,
-							"sustain" : 0.608296,
-							"decay" : 86.647336,
-							"attack" : 0.081881
+							"release" : 780.411145,
+							"sustain" : 0.651713,
+							"decay" : 85.953641,
+							"attack" : 0.34231
 						}
 ,
 						"87" : 						{
-							"release" : 787.992187,
-							"sustain" : 0.718682,
-							"decay" : 109.951154,
-							"attack" : 0.302421
+							"release" : 814.295756,
+							"sustain" : 0.798367,
+							"decay" : 97.676432,
+							"attack" : 0.000068
 						}
 ,
 						"86" : 						{
-							"release" : 807.526758,
-							"sustain" : 0.726317,
-							"decay" : 108.956791,
-							"attack" : 0.362351
+							"release" : 825.976987,
+							"sustain" : 0.679916,
+							"decay" : 128.01541,
+							"attack" : 0.164401
 						}
 ,
 						"85" : 						{
-							"release" : 794.715989,
-							"sustain" : 0.67304,
-							"decay" : 86.247627,
-							"attack" : 0.260718
+							"release" : 847.88408,
+							"sustain" : 0.654156,
+							"decay" : 128.213617,
+							"attack" : 0.309629
 						}
 ,
 						"84" : 						{
-							"release" : 782.17961,
-							"sustain" : 0.73048,
-							"decay" : 99.913364,
-							"attack" : 0.358814
+							"release" : 847.110997,
+							"sustain" : 0.628523,
+							"decay" : 107.874349,
+							"attack" : 0.305104
 						}
 ,
 						"83" : 						{
-							"release" : 822.812661,
-							"sustain" : 0.629919,
-							"decay" : 125.160469,
-							"attack" : 0.111941
+							"release" : 801.90311,
+							"sustain" : 0.629133,
+							"decay" : 92.053704,
+							"attack" : 0.267938
 						}
 ,
 						"82" : 						{
-							"release" : 788.003778,
-							"sustain" : 0.664854,
-							"decay" : 108.92194,
-							"attack" : 0.314107
+							"release" : 753.320193,
+							"sustain" : 0.611831,
+							"decay" : 100.101917,
+							"attack" : 0.357266
 						}
 ,
 						"81" : 						{
-							"release" : 784.9072,
-							"sustain" : 0.79204,
-							"decay" : 126.31495,
-							"attack" : 0.326144
+							"release" : 762.297352,
+							"sustain" : 0.748588,
+							"decay" : 112.560522,
+							"attack" : 0.103478
 						}
 ,
 						"80" : 						{
-							"release" : 800.748883,
-							"sustain" : 0.674164,
-							"decay" : 128.312537,
-							"attack" : 0.036248
+							"release" : 793.829272,
+							"sustain" : 0.785287,
+							"decay" : 81.143161,
+							"attack" : 0.185017
 						}
 ,
 						"79" : 						{
-							"release" : 816.619696,
-							"sustain" : 0.718439,
-							"decay" : 86.450555,
-							"attack" : 0.16799
+							"release" : 838.382211,
+							"sustain" : 0.673392,
+							"decay" : 98.985966,
+							"attack" : 0.371953
 						}
 ,
 						"78" : 						{
-							"release" : 789.556392,
-							"sustain" : 0.670309,
-							"decay" : 92.783694,
-							"attack" : 0.004321
+							"release" : 765.891991,
+							"sustain" : 0.728157,
+							"decay" : 83.949228,
+							"attack" : 0.049717
 						}
 ,
 						"77" : 						{
-							"release" : 779.933617,
-							"sustain" : 0.720041,
-							"decay" : 111.634458,
-							"attack" : 0.237131
+							"release" : 789.835169,
+							"sustain" : 0.660023,
+							"decay" : 86.785205,
+							"attack" : 0.317989
 						}
 ,
 						"76" : 						{
-							"release" : 801.28799,
-							"sustain" : 0.772427,
-							"decay" : 103.946562,
-							"attack" : 0.080452
+							"release" : 797.864491,
+							"sustain" : 0.763512,
+							"decay" : 118.457672,
+							"attack" : 0.328892
 						}
 ,
 						"75" : 						{
-							"release" : 791.66784,
-							"sustain" : 0.71589,
-							"decay" : 105.259287,
-							"attack" : 0.001374
+							"release" : 781.378609,
+							"sustain" : 0.72938,
+							"decay" : 96.806996,
+							"attack" : 0.085289
 						}
 ,
 						"74" : 						{
-							"release" : 849.449889,
-							"sustain" : 0.607219,
-							"decay" : 84.461904,
-							"attack" : 0.026291
+							"release" : 769.149966,
+							"sustain" : 0.771002,
+							"decay" : 92.100211,
+							"attack" : 0.164097
 						}
 ,
 						"73" : 						{
-							"release" : 842.286842,
-							"sustain" : 0.661758,
-							"decay" : 92.567388,
-							"attack" : 0.171094
+							"release" : 839.763669,
+							"sustain" : 0.62488,
+							"decay" : 103.788816,
+							"attack" : 0.161197
 						}
 ,
 						"72" : 						{
-							"release" : 785.447462,
-							"sustain" : 0.60627,
-							"decay" : 128.762163,
-							"attack" : 0.122449
+							"release" : 754.124042,
+							"sustain" : 0.697885,
+							"decay" : 127.017651,
+							"attack" : 0.073654
 						}
 ,
 						"71" : 						{
-							"release" : 795.283378,
-							"sustain" : 0.712846,
-							"decay" : 104.943761,
-							"attack" : 0.26331
+							"release" : 812.664498,
+							"sustain" : 0.790285,
+							"decay" : 117.086494,
+							"attack" : 0.341586
 						}
 ,
 						"70" : 						{
-							"release" : 754.904572,
-							"sustain" : 0.687062,
-							"decay" : 129.850809,
-							"attack" : 0.289332
+							"release" : 802.150247,
+							"sustain" : 0.623776,
+							"decay" : 83.161644,
+							"attack" : 0.066189
 						}
 ,
 						"69" : 						{
-							"release" : 782.368052,
-							"sustain" : 0.732297,
-							"decay" : 109.719857,
-							"attack" : 0.203878
+							"release" : 754.092278,
+							"sustain" : 0.647742,
+							"decay" : 89.068018,
+							"attack" : 0.202033
 						}
 ,
 						"68" : 						{
-							"release" : 766.781987,
-							"sustain" : 0.754416,
-							"decay" : 124.171143,
-							"attack" : 0.207801
+							"release" : 790.794944,
+							"sustain" : 0.684587,
+							"decay" : 108.962969,
+							"attack" : 0.090919
 						}
 ,
 						"67" : 						{
-							"release" : 834.700152,
-							"sustain" : 0.607245,
-							"decay" : 83.730436,
-							"attack" : 0.116232
+							"release" : 785.938407,
+							"sustain" : 0.706497,
+							"decay" : 129.101221,
+							"attack" : 0.361198
 						}
 ,
 						"66" : 						{
-							"release" : 828.02922,
-							"sustain" : 0.709073,
-							"decay" : 109.036742,
-							"attack" : 0.238096
+							"release" : 814.351094,
+							"sustain" : 0.611135,
+							"decay" : 103.746048,
+							"attack" : 0.160613
 						}
 ,
 						"65" : 						{
-							"release" : 815.394114,
-							"sustain" : 0.684106,
-							"decay" : 91.365651,
-							"attack" : 0.145102
+							"release" : 810.256203,
+							"sustain" : 0.682752,
+							"decay" : 113.565024,
+							"attack" : 0.322356
 						}
 ,
 						"64" : 						{
-							"release" : 821.504214,
-							"sustain" : 0.700135,
-							"decay" : 99.615748,
-							"attack" : 0.235469
+							"release" : 794.780248,
+							"sustain" : 0.68787,
+							"decay" : 88.569339,
+							"attack" : 0.383177
 						}
 ,
 						"63" : 						{
-							"release" : 843.535998,
-							"sustain" : 0.684849,
-							"decay" : 90.360574,
-							"attack" : 0.263666
+							"release" : 771.890504,
+							"sustain" : 0.661141,
+							"decay" : 94.81393,
+							"attack" : 0.379016
 						}
 ,
 						"62" : 						{
-							"release" : 829.895198,
-							"sustain" : 0.608086,
-							"decay" : 104.961162,
-							"attack" : 0.260956
+							"release" : 827.182111,
+							"sustain" : 0.787207,
+							"decay" : 94.671341,
+							"attack" : 0.037789
 						}
 ,
 						"61" : 						{
-							"release" : 824.944348,
-							"sustain" : 0.715948,
-							"decay" : 101.064323,
-							"attack" : 0.112555
+							"release" : 796.064552,
+							"sustain" : 0.778282,
+							"decay" : 124.525445,
+							"attack" : 0.370562
 						}
 ,
 						"60" : 						{
-							"release" : 833.379148,
-							"sustain" : 0.795108,
-							"decay" : 115.079356,
-							"attack" : 0.085728
+							"release" : 796.901072,
+							"sustain" : 0.784925,
+							"decay" : 91.201866,
+							"attack" : 0.131534
 						}
 ,
 						"59" : 						{
-							"release" : 829.909815,
-							"sustain" : 0.631741,
-							"decay" : 87.431001,
-							"attack" : 0.21916
+							"release" : 750.533525,
+							"sustain" : 0.758886,
+							"decay" : 119.360129,
+							"attack" : 0.173854
 						}
 ,
 						"58" : 						{
-							"release" : 833.751166,
-							"sustain" : 0.609415,
-							"decay" : 103.528983,
-							"attack" : 0.087459
+							"release" : 830.379082,
+							"sustain" : 0.7121,
+							"decay" : 86.418285,
+							"attack" : 0.372459
 						}
 ,
 						"57" : 						{
-							"release" : 783.147907,
-							"sustain" : 0.663916,
-							"decay" : 110.474615,
-							"attack" : 0.045668
+							"release" : 806.914084,
+							"sustain" : 0.684883,
+							"decay" : 109.363953,
+							"attack" : 0.11674
 						}
 ,
 						"56" : 						{
-							"release" : 782.759195,
-							"sustain" : 0.780322,
-							"decay" : 112.542461,
-							"attack" : 0.237149
+							"release" : 766.86424,
+							"sustain" : 0.649038,
+							"decay" : 99.026417,
+							"attack" : 0.395013
 						}
 ,
 						"55" : 						{
-							"release" : 756.199257,
-							"sustain" : 0.678843,
-							"decay" : 127.430181,
-							"attack" : 0.01428
+							"release" : 800.799338,
+							"sustain" : 0.62804,
+							"decay" : 122.042648,
+							"attack" : 0.399387
 						}
 ,
 						"54" : 						{
-							"release" : 817.378434,
-							"sustain" : 0.690762,
-							"decay" : 100.162232,
-							"attack" : 0.374836
+							"release" : 763.08445,
+							"sustain" : 0.61669,
+							"decay" : 108.845767,
+							"attack" : 0.373772
 						}
 ,
 						"53" : 						{
-							"release" : 777.51177,
-							"sustain" : 0.674468,
-							"decay" : 122.363184,
-							"attack" : 0.358033
+							"release" : 815.268572,
+							"sustain" : 0.626527,
+							"decay" : 117.537751,
+							"attack" : 0.309404
 						}
 ,
 						"52" : 						{
-							"release" : 829.759812,
-							"sustain" : 0.763987,
-							"decay" : 91.383984,
-							"attack" : 0.272641
+							"release" : 767.995569,
+							"sustain" : 0.771007,
+							"decay" : 108.478793,
+							"attack" : 0.261425
 						}
 ,
 						"51" : 						{
-							"release" : 800.439038,
-							"sustain" : 0.778483,
-							"decay" : 116.469598,
-							"attack" : 0.145669
+							"release" : 837.401126,
+							"sustain" : 0.735924,
+							"decay" : 102.834014,
+							"attack" : 0.116663
 						}
 ,
 						"50" : 						{
-							"release" : 824.586928,
-							"sustain" : 0.65115,
-							"decay" : 87.799006,
-							"attack" : 0.083574
+							"release" : 829.71338,
+							"sustain" : 0.655695,
+							"decay" : 90.163877,
+							"attack" : 0.186931
 						}
 ,
 						"49" : 						{
-							"release" : 794.389376,
-							"sustain" : 0.659505,
-							"decay" : 118.80864,
-							"attack" : 0.328998
+							"release" : 762.403804,
+							"sustain" : 0.735113,
+							"decay" : 115.42787,
+							"attack" : 0.233779
 						}
 ,
 						"48" : 						{
-							"release" : 841.575795,
-							"sustain" : 0.756498,
-							"decay" : 102.727892,
-							"attack" : 0.274552
+							"release" : 821.738767,
+							"sustain" : 0.718864,
+							"decay" : 114.491721,
+							"attack" : 0.249795
 						}
 ,
 						"47" : 						{
-							"release" : 849.359887,
-							"sustain" : 0.712972,
-							"decay" : 90.710453,
-							"attack" : 0.361168
+							"release" : 844.961186,
+							"sustain" : 0.717532,
+							"decay" : 129.386652,
+							"attack" : 0.328171
 						}
 ,
 						"46" : 						{
-							"release" : 845.851793,
-							"sustain" : 0.686901,
-							"decay" : 101.33775,
-							"attack" : 0.242053
+							"release" : 800.585499,
+							"sustain" : 0.749019,
+							"decay" : 120.164806,
+							"attack" : 0.046405
 						}
 ,
 						"45" : 						{
-							"release" : 809.089882,
-							"sustain" : 0.63347,
-							"decay" : 109.600902,
-							"attack" : 0.034316
+							"release" : 822.418199,
+							"sustain" : 0.648271,
+							"decay" : 99.228253,
+							"attack" : 0.371651
 						}
 ,
 						"44" : 						{
-							"release" : 813.93819,
-							"sustain" : 0.662417,
-							"decay" : 87.735129,
-							"attack" : 0.108845
+							"release" : 831.919957,
+							"sustain" : 0.735862,
+							"decay" : 96.479656,
+							"attack" : 0.364355
 						}
 ,
 						"43" : 						{
-							"release" : 773.068102,
-							"sustain" : 0.635229,
-							"decay" : 80.485674,
-							"attack" : 0.284997
+							"release" : 759.404368,
+							"sustain" : 0.61746,
+							"decay" : 119.550886,
+							"attack" : 0.113473
 						}
 ,
 						"42" : 						{
-							"release" : 768.090608,
-							"sustain" : 0.774634,
-							"decay" : 93.526841,
-							"attack" : 0.300245
+							"release" : 847.322215,
+							"sustain" : 0.711391,
+							"decay" : 102.711553,
+							"attack" : 0.380702
 						}
 ,
 						"41" : 						{
-							"release" : 832.628029,
-							"sustain" : 0.632483,
-							"decay" : 105.835863,
-							"attack" : 0.015862
+							"release" : 788.509055,
+							"sustain" : 0.770436,
+							"decay" : 90.84268,
+							"attack" : 0.362783
 						}
 ,
 						"40" : 						{
-							"release" : 836.711821,
-							"sustain" : 0.629489,
-							"decay" : 84.840859,
-							"attack" : 0.398318
+							"release" : 818.777828,
+							"sustain" : 0.776745,
+							"decay" : 81.081399,
+							"attack" : 0.200096
 						}
 ,
 						"39" : 						{
-							"release" : 831.365744,
-							"sustain" : 0.741431,
-							"decay" : 87.117238,
-							"attack" : 0.082002
+							"release" : 846.617136,
+							"sustain" : 0.745135,
+							"decay" : 94.400755,
+							"attack" : 0.366401
 						}
 ,
 						"38" : 						{
-							"release" : 843.58124,
-							"sustain" : 0.761297,
-							"decay" : 117.299492,
-							"attack" : 0.072476
+							"release" : 763.009698,
+							"sustain" : 0.770276,
+							"decay" : 122.484445,
+							"attack" : 0.268704
 						}
 ,
 						"37" : 						{
-							"release" : 765.114652,
-							"sustain" : 0.715508,
-							"decay" : 93.705367,
-							"attack" : 0.090406
+							"release" : 831.51442,
+							"sustain" : 0.697208,
+							"decay" : 91.789486,
+							"attack" : 0.067889
 						}
 ,
 						"36" : 						{
-							"release" : 753.633465,
-							"sustain" : 0.654696,
-							"decay" : 80.937019,
-							"attack" : 0.184904
+							"release" : 812.75942,
+							"sustain" : 0.68231,
+							"decay" : 106.660516,
+							"attack" : 0.09989
 						}
 ,
 						"35" : 						{
-							"release" : 761.711458,
-							"sustain" : 0.775691,
-							"decay" : 97.428804,
-							"attack" : 0.160964
+							"release" : 828.372244,
+							"sustain" : 0.643304,
+							"decay" : 126.767646,
+							"attack" : 0.133813
 						}
 ,
 						"34" : 						{
-							"release" : 828.020305,
-							"sustain" : 0.661235,
-							"decay" : 89.553962,
-							"attack" : 0.269249
+							"release" : 817.127453,
+							"sustain" : 0.772072,
+							"decay" : 100.985476,
+							"attack" : 0.047564
 						}
 ,
 						"33" : 						{
-							"release" : 805.787806,
-							"sustain" : 0.747551,
-							"decay" : 83.482501,
-							"attack" : 0.297456
+							"release" : 780.720581,
+							"sustain" : 0.702995,
+							"decay" : 120.114097,
+							"attack" : 0.333174
 						}
 ,
 						"32" : 						{
-							"release" : 766.190607,
-							"sustain" : 0.74733,
-							"decay" : 81.500195,
-							"attack" : 0.281022
+							"release" : 758.08151,
+							"sustain" : 0.792236,
+							"decay" : 114.563586,
+							"attack" : 0.363163
 						}
 ,
 						"31" : 						{
-							"release" : 798.821902,
-							"sustain" : 0.666777,
-							"decay" : 110.953661,
-							"attack" : 0.116966
+							"release" : 805.519047,
+							"sustain" : 0.669823,
+							"decay" : 110.281738,
+							"attack" : 0.155912
 						}
 ,
 						"30" : 						{
-							"release" : 837.722278,
-							"sustain" : 0.660282,
-							"decay" : 111.379079,
-							"attack" : 0.218131
+							"release" : 795.24254,
+							"sustain" : 0.776582,
+							"decay" : 116.800449,
+							"attack" : 0.272169
 						}
 ,
 						"29" : 						{
-							"release" : 769.684527,
-							"sustain" : 0.664886,
-							"decay" : 108.702196,
-							"attack" : 0.186156
+							"release" : 776.93519,
+							"sustain" : 0.791928,
+							"decay" : 105.309382,
+							"attack" : 0.056436
 						}
 ,
 						"28" : 						{
-							"release" : 831.640885,
-							"sustain" : 0.74911,
-							"decay" : 124.664797,
-							"attack" : 0.109998
+							"release" : 776.057655,
+							"sustain" : 0.696206,
+							"decay" : 92.136248,
+							"attack" : 0.30614
 						}
 ,
 						"27" : 						{
-							"release" : 775.913823,
-							"sustain" : 0.796846,
-							"decay" : 104.837987,
-							"attack" : 0.312833
+							"release" : 828.439428,
+							"sustain" : 0.692718,
+							"decay" : 123.921255,
+							"attack" : 0.208128
 						}
 ,
 						"26" : 						{
-							"release" : 775.959205,
-							"sustain" : 0.726888,
-							"decay" : 119.725085,
-							"attack" : 0.173698
+							"release" : 773.46942,
+							"sustain" : 0.739778,
+							"decay" : 115.118934,
+							"attack" : 0.026159
 						}
 ,
 						"25" : 						{
-							"release" : 760.953197,
-							"sustain" : 0.722315,
-							"decay" : 100.537141,
-							"attack" : 0.241256
+							"release" : 847.826009,
+							"sustain" : 0.612072,
+							"decay" : 116.243812,
+							"attack" : 0.154726
 						}
 ,
 						"24" : 						{
-							"release" : 805.172093,
-							"sustain" : 0.711322,
-							"decay" : 114.241555,
-							"attack" : 0.235541
+							"release" : 838.190833,
+							"sustain" : 0.623299,
+							"decay" : 92.497071,
+							"attack" : 0.173651
 						}
 ,
 						"23" : 						{
-							"release" : 757.586744,
-							"sustain" : 0.602229,
-							"decay" : 111.439419,
-							"attack" : 0.299618
+							"release" : 764.769368,
+							"sustain" : 0.798523,
+							"decay" : 117.069535,
+							"attack" : 0.044565
 						}
 ,
 						"22" : 						{
-							"release" : 778.441049,
-							"sustain" : 0.730279,
-							"decay" : 95.519775,
-							"attack" : 0.016553
+							"release" : 777.695407,
+							"sustain" : 0.784833,
+							"decay" : 81.512037,
+							"attack" : 0.384516
 						}
 ,
 						"21" : 						{
-							"release" : 752.806554,
-							"sustain" : 0.622458,
-							"decay" : 112.369021,
-							"attack" : 0.048132
+							"release" : 755.525275,
+							"sustain" : 0.732903,
+							"decay" : 97.097436,
+							"attack" : 0.233577
 						}
 ,
 						"20" : 						{
-							"release" : 776.20286,
-							"sustain" : 0.72899,
-							"decay" : 96.681323,
-							"attack" : 0.380286
+							"release" : 799.031717,
+							"sustain" : 0.769678,
+							"decay" : 106.069226,
+							"attack" : 0.102492
 						}
 ,
 						"19" : 						{
-							"release" : 754.346274,
-							"sustain" : 0.606233,
-							"decay" : 83.620941,
-							"attack" : 0.27617
+							"release" : 814.386116,
+							"sustain" : 0.713912,
+							"decay" : 90.079909,
+							"attack" : 0.143009
 						}
 ,
 						"18" : 						{
-							"release" : 827.936675,
-							"sustain" : 0.765644,
-							"decay" : 103.229968,
-							"attack" : 0.141393
+							"release" : 777.571766,
+							"sustain" : 0.761448,
+							"decay" : 104.96799,
+							"attack" : 0.027711
 						}
 ,
 						"17" : 						{
-							"release" : 824.115317,
-							"sustain" : 0.62708,
-							"decay" : 119.555043,
-							"attack" : 0.196883
+							"release" : 766.499705,
+							"sustain" : 0.78608,
+							"decay" : 86.305666,
+							"attack" : 0.157792
 						}
 ,
 						"16" : 						{
-							"release" : 848.823925,
-							"sustain" : 0.732087,
-							"decay" : 106.984202,
-							"attack" : 0.333403
+							"release" : 838.80259,
+							"sustain" : 0.664541,
+							"decay" : 108.869976,
+							"attack" : 0.33636
 						}
 ,
 						"15" : 						{
-							"release" : 768.768059,
-							"sustain" : 0.783977,
-							"decay" : 122.740078,
-							"attack" : 0.187748
+							"release" : 821.661003,
+							"sustain" : 0.6406,
+							"decay" : 95.348397,
+							"attack" : 0.051493
 						}
 ,
 						"14" : 						{
-							"release" : 788.035425,
-							"sustain" : 0.786358,
-							"decay" : 86.868278,
-							"attack" : 0.334149
+							"release" : 765.270423,
+							"sustain" : 0.793446,
+							"decay" : 105.185545,
+							"attack" : 0.007413
 						}
 ,
 						"13" : 						{
-							"release" : 802.642445,
-							"sustain" : 0.750437,
-							"decay" : 119.389801,
-							"attack" : 0.125474
+							"release" : 793.686101,
+							"sustain" : 0.769486,
+							"decay" : 93.51088,
+							"attack" : 0.323794
 						}
 ,
 						"12" : 						{
-							"release" : 816.38005,
-							"sustain" : 0.733765,
-							"decay" : 108.553967,
-							"attack" : 0.347261
+							"release" : 765.786856,
+							"sustain" : 0.674372,
+							"decay" : 112.557984,
+							"attack" : 0.092341
 						}
 ,
 						"11" : 						{
-							"release" : 823.302336,
-							"sustain" : 0.759264,
-							"decay" : 94.333405,
-							"attack" : 0.263705
+							"release" : 834.977869,
+							"sustain" : 0.603534,
+							"decay" : 83.894209,
+							"attack" : 0.136434
 						}
 ,
 						"10" : 						{
-							"release" : 806.049361,
-							"sustain" : 0.643231,
-							"decay" : 97.445202,
-							"attack" : 0.038185
+							"release" : 769.006304,
+							"sustain" : 0.714661,
+							"decay" : 99.125175,
+							"attack" : 0.263765
 						}
 ,
 						"9" : 						{
-							"release" : 764.918007,
-							"sustain" : 0.734666,
-							"decay" : 106.262433,
-							"attack" : 0.101958
+							"release" : 760.892609,
+							"sustain" : 0.614557,
+							"decay" : 109.521827,
+							"attack" : 0.033543
 						}
 ,
 						"8" : 						{
-							"release" : 780.192552,
-							"sustain" : 0.635625,
-							"decay" : 101.997813,
-							"attack" : 0.023156
+							"release" : 828.484202,
+							"sustain" : 0.745457,
+							"decay" : 91.238421,
+							"attack" : 0.078967
 						}
 ,
 						"7" : 						{
-							"release" : 819.719136,
-							"sustain" : 0.73348,
-							"decay" : 106.49637,
-							"attack" : 0.394237
+							"release" : 763.517131,
+							"sustain" : 0.612357,
+							"decay" : 122.448066,
+							"attack" : 0.132325
 						}
 ,
 						"6" : 						{
-							"release" : 835.056096,
-							"sustain" : 0.630793,
-							"decay" : 126.866523,
-							"attack" : 0.209557
+							"release" : 751.325295,
+							"sustain" : 0.693098,
+							"decay" : 81.818106,
+							"attack" : 0.094215
 						}
 ,
 						"5" : 						{
-							"release" : 842.754691,
-							"sustain" : 0.707197,
-							"decay" : 97.009105,
-							"attack" : 0.345751
+							"release" : 839.465586,
+							"sustain" : 0.716896,
+							"decay" : 124.280857,
+							"attack" : 0.170006
 						}
 ,
 						"4" : 						{
-							"release" : 762.422461,
-							"sustain" : 0.690016,
-							"decay" : 127.871411,
-							"attack" : 0.286111
+							"release" : 787.531367,
+							"sustain" : 0.684694,
+							"decay" : 110.025896,
+							"attack" : 0.065828
 						}
 ,
 						"3" : 						{
-							"release" : 780.194084,
-							"sustain" : 0.646525,
-							"decay" : 125.95843,
-							"attack" : 0.146188
+							"release" : 781.30546,
+							"sustain" : 0.736162,
+							"decay" : 106.04833,
+							"attack" : 0.292996
 						}
 ,
 						"2" : 						{
-							"release" : 825.082276,
-							"sustain" : 0.640606,
-							"decay" : 123.276015,
-							"attack" : 0.161338
+							"release" : 842.15784,
+							"sustain" : 0.743378,
+							"decay" : 96.433143,
+							"attack" : 0.373919
 						}
 ,
 						"1" : 						{
-							"release" : 786.403929,
-							"sustain" : 0.620202,
-							"decay" : 81.460799,
-							"attack" : 0.287967
+							"release" : 807.222089,
+							"sustain" : 0.730157,
+							"decay" : 127.838955,
+							"attack" : 0.374202
 						}
 ,
 						"0" : 						{
-							"release" : 763.074312,
-							"sustain" : 0.719363,
-							"decay" : 88.369272,
-							"attack" : 0.248721
+							"release" : 797.388551,
+							"sustain" : 0.678674,
+							"decay" : 80.365198,
+							"attack" : 0.104759
 						}
 
 					}
@@ -2843,7 +2842,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 362.531128, 453.562439, 152.528778, 62.0 ],
-					"text" : "8:29"
+					"text" : "2:01"
 				}
 
 			}
