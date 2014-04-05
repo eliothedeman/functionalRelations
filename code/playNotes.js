@@ -4,15 +4,20 @@ function playNotes(num) {
 	var masterNotes = to_hash(new Dict("masterNotes"));
 	var keys = Object.keys(masterNotes);
 	var done = 0;
+
 	while (done < num) {
 		i = done % keys.length;
-		var elements = masterNotes[keys[i]];
+		var elements = masterNotes[keys[i]]
+		if (elements== undefined) {
+			break;
+		}
+		
 		try {
 			var elementsKeys = Object.keys(elements);
 		} catch (err) {
 
 		}
-		
+	
 		if (elements["prob"] > Math.random() && elements["prob"] != 1){
 			for (var x = elementsKeys.length - 1; x >= 0; x--) {
 				outlet(1, elements[elementsKeys[x]]);
