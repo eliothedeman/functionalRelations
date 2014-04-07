@@ -1,5 +1,6 @@
 // holds all logic and data structures for the piece
 envelopes = {}
+outlets = 1;
 var masterState = {};
 function setMasterState() {
 	masterState = to_hash(new Dict("masterState"));
@@ -17,35 +18,39 @@ function Note(prob,seed,index) {
 	this.pitch = Math.random() *127
 	this.prob = (prob+1)/2;
 	this.duration = Math.pow(1-((prob+1)/2),2)*(piece.duration/100)+ 50;
-	this.prototype.dump = function() {
-		outlet(0,this.to_array());
-	}
-	//flatten a note into an array
-	this.prototype.to_array() {
-		var tmpArr = []
-		var offset = 0;
-		try {
-			keys = Object.keys(this);
-			for (var i = 0; i < keys.length; i++) {
-				if (this[keys[i]] instanceof Object) {
-					var innerTmp = this[keys[i]];
-					var innerKeys = Object.keys(innerTmp);
-					for (var x = 0; x < innerKeys.length; x++) {
-						tmpArr[offset] = innerKeys[x];
-						tmpArr[offset++] = innerTmp[innerKeys[x]];
-						offset++;
-					};
-				} else {
-					tmpArr[offset]=keys[i];
-					tmpArr[offset++]= this[keys[i]];
+
+}
+//flatten a note into an array
+Note.prototype.to_array = function() {
+	var tmpArr = []
+	var offset = 0;
+	try {
+		var keys = Object.keys(this);
+		for (var i = 0; i < keys.length; i++) {
+
+			if (this[keys[i]] instanceof Object) {
+				var innerTmp = this[keys[i]];
+				var innerKeys = Object.keys(innerTmp);
+
+				for (var x = 0; x < innerKeys.length; x++) {
+					tmpArr[offset] = innerKeys[x];
+					tmpArr[offset++] = innerTmp[innerKeys[x]];
 					offset++;
-				}
-				
-			};
-		} catch (err) {
-		}
-		return tmpArr;
+				};
+			} else {
+				tmpArr[offset]=keys[i];
+				offset++;
+				tmpArr[offset]= this[keys[i]];
+				offset++;
+			}
+			
+		};
+	} catch (err) {
 	}
+	return tmpArr;
+}
+Note.prototype.dump = function() {
+	outlet(0,this.to_array());
 }
 // constructur for an ADSR object 
 function ADSR(attack,decay,sustain,release) {
@@ -67,15 +72,21 @@ function genNotes() {
 	};
 	
 }
+function getNotes(numNotes) {
+	for (var i = 0; i < numNotes; i++) {
+		getNote();
+	}
+}
 function getNote() {
 	hold = noteQueue.dequeue();
 	if (hold == undefined) {
 		genNotes()
+		post("newQueue");
 		hold = noteQueue.dequeue();
 	}
 	hold.dump();
-	hold.prob -= 0.01;
-	if (hold.prob > 0) {
+	hold.prob -= 0.02;
+	if (hold.prob > 0.0) {
 		noteQueue.enqueue(hold);
 	}
 }
