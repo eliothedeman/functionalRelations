@@ -1,17 +1,51 @@
 // holds all logic and data structures for the piece
 envelopes = {}
-var masterState = to_hash(new Dict("masterState"));
-var pieceLength = masterTime["piece"]["length"]
+var masterState = {};
+function setMasterState() {
+	masterState = to_hash(new Dict("masterState"));
+}
+var piece = {duration:10000}
+function setPieceDuration(duration) {
+	piece.duration = duration;
+}
 // A FIFO queue which holds the notes that still need to be played
 var noteQueue = new Queue();
 var adsrQueue = new Queue();
 // constructor for Note object with all associated fields
 function Note(prob,seed,index) {
-	this.adsr = adsr;
 	this.amp = 1-(((prob+1)/2)*seed);
 	this.pitch = Math.random() *127
-	this.prob = (prob+1)/2;;
-	this.duration = Math.pow(1-((prob+1)/2),2)*(pieceLength/100)+ 50;;
+	this.prob = (prob+1)/2;
+	this.duration = Math.pow(1-((prob+1)/2),2)*(piece.duration/100)+ 50;
+	this.prototype.dump = function() {
+		outlet(0,this.to_array());
+	}
+	//flatten a note into an array
+	this.prototype.to_array() {
+		var tmpArr = []
+		var offset = 0;
+		try {
+			keys = Object.keys(this);
+			for (var i = 0; i < keys.length; i++) {
+				if (this[keys[i]] instanceof Object) {
+					var innerTmp = this[keys[i]];
+					var innerKeys = Object.keys(innerTmp);
+					for (var x = 0; x < innerKeys.length; x++) {
+						tmpArr[offset] = innerKeys[x];
+						tmpArr[offset++] = innerTmp[innerKeys[x]];
+						offset++;
+					};
+				} else {
+					tmpArr[offset]=keys[i];
+					tmpArr[offset++]= this[keys[i]];
+					offset++;
+				}
+				
+			};
+		} catch (err) {
+		}
+		return tmpArr;
+	}
 }
 // constructur for an ADSR object 
 function ADSR(attack,decay,sustain,release) {
@@ -33,13 +67,24 @@ function genNotes() {
 	};
 	
 }
+function getNote() {
+	hold = noteQueue.dequeue();
+	if (hold == undefined) {
+		genNotes()
+		hold = noteQueue.dequeue();
+	}
+	hold.dump();
+	hold.prob -= 0.01;
+	if (hold.prob > 0) {
+		noteQueue.enqueue(hold);
+	}
+}
 // Generate the ADSR envelopes to be used through out the piece
 function genADSR(total) {
 	for (var i = 0; i < total; i++) {
 		envelopes[i+""] = {attack: Math.random()*0.4, decay: Math.random()*50+80, sustain: Math.random()*0.2+0.6, release: (Math.random()*100)+750};
 	}
 	var d = new Dict("envelopes");
-	
 }
 
 
