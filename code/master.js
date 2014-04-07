@@ -1,5 +1,5 @@
 // holds all logic and data structures for the piece
-envelopes = {}
+envelopes = []
 outlets = 1;
 var masterState = {};
 function setMasterState() {
@@ -14,6 +14,7 @@ var noteQueue = new Queue();
 var adsrQueue = new Queue();
 // constructor for Note object with all associated fields
 function Note(prob,seed,index) {
+	this.adsr = envelopes[Math.floor(((prob+1)/2)*100)];
 	this.amp = 1-(((prob+1)/2)*seed);
 	this.pitch = Math.random() *127
 	this.prob = (prob+1)/2;
@@ -23,7 +24,8 @@ function Note(prob,seed,index) {
 //flatten a note into an array
 Note.prototype.to_array = function() {
 	var tmpArr = []
-	var offset = 0;
+	var offset = 1;
+	tmpArr[0] = "note";
 	try {
 		var keys = Object.keys(this);
 		for (var i = 0; i < keys.length; i++) {
@@ -34,7 +36,8 @@ Note.prototype.to_array = function() {
 
 				for (var x = 0; x < innerKeys.length; x++) {
 					tmpArr[offset] = innerKeys[x];
-					tmpArr[offset++] = innerTmp[innerKeys[x]];
+					offset++;
+					tmpArr[offset] = innerTmp[innerKeys[x]];
 					offset++;
 				};
 			} else {
@@ -72,6 +75,7 @@ function genNotes() {
 	};
 	
 }
+//get a group of notes
 function getNotes(numNotes) {
 	for (var i = 0; i < numNotes; i++) {
 		getNote();
@@ -93,9 +97,8 @@ function getNote() {
 // Generate the ADSR envelopes to be used through out the piece
 function genADSR(total) {
 	for (var i = 0; i < total; i++) {
-		envelopes[i+""] = {attack: Math.random()*0.4, decay: Math.random()*50+80, sustain: Math.random()*0.2+0.6, release: (Math.random()*100)+750};
+		envelopes[i] = {attack: Math.random()*50+7, decay: Math.random()*50+80, sustain: Math.random()*0.2+0.6, release: (Math.random()*100)+750};
 	}
-	var d = new Dict("envelopes");
 }
 
 
