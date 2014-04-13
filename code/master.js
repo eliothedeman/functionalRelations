@@ -18,7 +18,7 @@ function Note(prob,seed,index) {
 	this.amp = 1-(((prob+1)/2)*seed);
 	this.pitch = Math.random() *127
 	this.prob = (prob+1)/2;
-	this.duration = Math.pow(1-((prob+1)/2),2)*(piece.duration/100)+ 50;
+	this.duration = 10+(100/this.prob);
 
 }
 //flatten a note into an array
@@ -61,6 +61,16 @@ function ADSR(attack,decay,sustain,release) {
 	this.decay = decay;
 	this.sustain = sustain;
 	this.release = release;
+	this.xs = [];
+	this.ys = [];
+	this.to_array = function {
+		hold = [];
+		for (var i = 0; i < this.xs.length; i+=2) {
+			hold[i] = this.xs[i];
+			hold[i+1] = this.ys[i];
+		};
+		return hold;
+	}
 }
 // Generate a new set of notes based on the function inputed by user.
 function genNotes() {
