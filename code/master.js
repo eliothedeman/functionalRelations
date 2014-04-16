@@ -1,4 +1,8 @@
 // holds all logic and data structures for the piece
+var maxDuration = 10000;
+function setMaxDuration(m) {
+	maxDuration = m;
+}
 envelopes = []
 outlets = 1;
 var masterState = {};
@@ -19,7 +23,7 @@ function Note(prob,seed,index) {
 	this.amp = 1-(((prob+1)/2)*seed);
 	this.pitch = Math.random() *127
 	this.prob = (prob+1)/2;
-	this.duration = 10+(100/this.prob);
+	this.duration = 10+(maxDuration*Math.pow(this.prob,5));
 
 }
 //flatten a note into an array
