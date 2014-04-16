@@ -14,6 +14,7 @@ var noteQueue = new Queue();
 var adsrQueue = new Queue();
 // constructor for Note object with all associated fields
 function Note(prob,seed,index) {
+	this.delay = this.duration / 3.0;
 	this.adsr = envelopes[Math.floor(((prob+1)/2)*100)];
 	this.amp = 1-(((prob+1)/2)*seed);
 	this.pitch = Math.random() *127
@@ -107,7 +108,7 @@ function getNote() {
 // Generate the ADSR envelopes to be used through out the piece
 function genADSR(total) {
 	for (var i = 0; i < total; i++) {
-		envelopes[i] = {attack: Math.random()*50+7, decay: Math.random()*50+80, sustain: Math.random()*0.2+0.6, release: (Math.random()*100)+750};
+		envelopes[i] = {attack: Math.random()*200+7, decay: Math.random()*50+80, sustain: Math.random()*0.2+0.6, release: (Math.random()*750)+100};
 	}
 }
 
