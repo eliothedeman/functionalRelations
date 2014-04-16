@@ -1,9 +1,9 @@
 {
 	"name" : "alg",
 	"version" : 1,
-	"creationdate" : -822895460,
-	"modificationdate" : 3479236034,
-	"viewrect" : [ 2246.0, 295.0, 300.0, 500.0 ],
+	"creationdate" : -822895581,
+	"modificationdate" : 3480441617,
+	"viewrect" : [ 2251.0, 923.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -15,27 +15,12 @@
 				"local" : 1
 			}
 ,
-			"mixer51.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"mixerStereo.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
 			"config.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
 			"collectFunction.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"cron.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -56,6 +41,21 @@
 			}
 ,
 			"baseSynth.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"mixer51.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"mixerStereo.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"cron.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -84,6 +84,11 @@
 				"kind" : "patcher",
 				"local" : 1
 			}
+,
+			"surroundVerb.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
 
 		}
 ,
@@ -103,10 +108,6 @@
 				"kind" : "javascript",
 				"local" : 1
 			}
-
-		}
-,
-		"externals" : 		{
 
 		}
 ,
