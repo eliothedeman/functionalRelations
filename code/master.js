@@ -63,7 +63,7 @@ function ADSR(attack,decay,sustain,release) {
 	this.release = release;
 	this.xs = [];
 	this.ys = [];
-	this.to_array = function {
+	this.to_array = function() {
 		hold = [];
 		for (var i = 0; i < this.xs.length; i+=2) {
 			hold[i] = this.xs[i];
