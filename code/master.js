@@ -23,7 +23,12 @@ function Note(prob,seed,index) {
 	this.amp = 1-(((prob+1)/2)*seed);
 	this.pitch = Math.random() *127
 	this.prob = (prob+1)/2;
-	this.duration = 10+(maxDuration*Math.pow(this.prob,5));
+	if (Math.random() > 0.7) {
+		maxDuration*Math.pow(this.prob,6);
+	} else {
+		this.duration = 10+(Math.log(maxDuration)/(this.prob+0.01));
+	}
+	
 
 }
 //flatten a note into an array
